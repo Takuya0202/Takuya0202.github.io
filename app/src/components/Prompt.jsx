@@ -1,4 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
+import AllDirectionsBorder from './common/borders/AllDirectionsBorder';
+
 
 const Prompt = ({tokens}) => {
   const [text,setText] = useState(0);
@@ -29,8 +31,9 @@ const Prompt = ({tokens}) => {
   } , []);
 
   return (
-    <div>
-      <div className='max-w-[1000px] w-[640px] border-[#f6f6f6] border-2 rounded-lg p-3 bg-black my-5'>
+    <div className='w-full mx-auto'>
+      <div className='relative max-w-[1000px] w-[640px] rounded-lg p-4 bg-black my-5 mx-auto'>
+        <AllDirectionsBorder />
         <div className='flex items-center justify-between'>
             <p className='text-white'><span className='text-[#98c379]'>class</span><span className='text-red-600 px-1.5'>Takuya0202</span>{'{'}</p>
             <button className='px-2 py-0.5 rounded-sm text-white border-2 border-white' onClick={handleClean}>clear</button>

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
-    .shadow-inset-bottom {
-      box-shadow: inset 0 -15px 20px #cccccc10;
-    }
+  .shadow-inset-bottom {
+    box-shadow: inset 0 -15px 20px #cccccc10;
   }
+}

@@ -1,14 +1,12 @@
-import React from 'react'
-import Button from './Button'
+import React from "react";
+import Button from "./Button";
 
-const NavButton = ({children}) => {
+const NavButton = ({ children }) => {
   return (
     <div>
-      <Button>
-        {children}
-      </Button>
+      <Button>{children}</Button>
     </div>
-  )
-}
+  );
+};
 
-export default NavButton
+export default NavButton;

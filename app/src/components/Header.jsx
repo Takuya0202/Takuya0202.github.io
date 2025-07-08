@@ -5,7 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Header = () => {
   return (
-    <header className="fixed z-10 w-full">
+    <header className="fixed z-10 w-full block">
       <div className="relative flex items-center py-3 bg-black justify-around ">
         <h1 className="text-white ml-5">
           <a href="">Logo</a>

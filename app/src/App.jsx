@@ -14,11 +14,14 @@ function App() {
       <main className="w-full h-full bg-black ">
         <div>
           <div className="flex justify-center">
-            <h1 className="w-auto p-4 text-white text-[80px] my-20" id="about">
+            <h1
+              className="w-auto p-4 text-white text-[100px] mb-20 mt-40 tracking-wider"
+              id="about"
+            >
               Hello,Evryone!!!
             </h1>
           </div>
-          <div className="w-full flex justify-center space-x-5">
+          <div className="w-full flex justify-center space-x-20 items-center">
             <Prompt tokens={tokens} />
             <Stacks />
           </div>

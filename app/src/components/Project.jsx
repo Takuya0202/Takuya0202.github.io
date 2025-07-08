@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import AllDirectionsBorder from "./common/borders/AllDirectionsBorder";
+import Border from "./common/borders/Border";
+import FullBorder from "./common/borders/FullBorder";
 
 const Project = () => {
   // リポジトリ情報をフェッチ
@@ -30,18 +33,19 @@ const Project = () => {
 
   return (
     // gridで3つずつ表示
-    <div className="grid grid-cols-2 gap-4 max-w-[900px] min-w-[600px] mx-auto">
+    <div className="grid grid-cols-3 gap-x-4 gap-y-8 w-[80%] mx-auto">
       {pinnedRepos &&
         pinnedRepos.map((rp) => (
-          <div
-            className="text-white w-[400px] p-4 border-2 border-[#f4f4f4] rounded-md"
-            key={rp.id}
-          >
-            <img
-              src={`https://socialify.git.ci/Takuya0202/${rp.name}/image?description=1&font=Source%20Code%20Pro&name=1&pattern=Solid&theme=Dark`}
-              alt="リポジトリ画像"
-              className="border-b-2 border[#f4f4f4]"
-            />
+          <div className="text-white p-4 rounded-md relative" key={rp.id}>
+            <AllDirectionsBorder />
+            <div className="relative">
+              <img
+                src={`https://socialify.git.ci/Takuya0202/${rp.name}/image?description=1&font=Source%20Code%20Pro&name=1&pattern=Solid&theme=Dark`}
+                alt="リポジトリ画像"
+                className="relative pb-2"
+              />
+              <FullBorder direction="bottom" className="mb-2" />
+            </div>
             <p>
               <a
                 href={`https://github.com/Takuya0202/${rp.name}`}

@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import AllDirectionsBorder from "./common/borders/AllDirectionsBorder";
+import AllDirectionsFullBorder from "./common/borders/AllDirectionsFullBorder";
 
 const Prompt = ({ tokens }) => {
   const [text, setText] = useState(0);
@@ -24,9 +25,9 @@ const Prompt = ({ tokens }) => {
   }, []);
 
   return (
-    <div className="w-full mx-auto">
-      <div className="relative max-w-[1000px] w-[640px] rounded-lg p-4 bg-black my-5 mx-auto">
-        <AllDirectionsBorder />
+    <div className="">
+      <div className="relative max-w-[1000px] w-[640px] rounded-lg p-4 bg-black my-5 mx-auto h-[302px]">
+        <AllDirectionsFullBorder />
         <div className="flex items-center justify-between">
           <p className="text-white">
             <span className="text-[#98c379]">class</span>
@@ -93,7 +94,6 @@ const Prompt = ({ tokens }) => {
             );
           })}
         </div>
-        /
       </div>
     </div>
   );

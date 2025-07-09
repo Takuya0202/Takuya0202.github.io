@@ -3,7 +3,6 @@ import AllDirectionsBorder from "./common/borders/AllDirectionsBorder";
 import AllDirectionsFullBorder from "./common/borders/AllDirectionsFullBorder";
 import IconButton from "./common/buttons/IconButton";
 
-
 const Prompt = ({ tokens }) => {
   const [text, setText] = useState(0);
   const [isStop, setIsStop] = useState(true);
@@ -36,7 +35,12 @@ const Prompt = ({ tokens }) => {
             <span className="text-red-600 px-1.5">Takuya0202</span>
             {"{"}
           </p>
-          <IconButton iconName="clear" text="clear" className='text-white' onClick={handleClean}/>
+          <IconButton
+            iconName="clear"
+            text="clear"
+            className="text-white"
+            onClick={handleClean}
+          />
         </div>
         <div className="ml-3">
           {tokens.slice(0, text).map((token, i) => {

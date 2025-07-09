@@ -15,13 +15,25 @@ const Header = () => {
         </h1>
         <ul className="flex items-center space-x-10 text-white mr-10">
           <AnchorLink href="#about">
-            <IconButton iconName="about" text="about" borderColor="rgb(223,102,201,0.97)"/>
+            <IconButton
+              iconName="about"
+              text="info"
+              borderColor="rgb(223,102,201,0.97)"
+            />
           </AnchorLink>
           <AnchorLink href="#project">
-            <IconButton iconName="project" text="project" borderColor="rgb(12,23,255,0.97)"/>
+            <IconButton
+              iconName="project"
+              text="project"
+              borderColor="rgb(12,23,255,0.97)"
+            />
           </AnchorLink>
           <AnchorLink href="#blog">
-            <IconButton iconName="blog" text="blog" borderColor="rgb(0,222,213,0.97)"/>
+            <IconButton
+              iconName="blog"
+              text="blog"
+              borderColor="rgb(0,222,213,0.97)"
+            />
           </AnchorLink>
         </ul>
         <Border direction="bottom" />

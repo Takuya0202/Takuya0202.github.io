@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import AllDirectionsBorder from "./common/borders/AllDirectionsBorder";
 import Border from "./common/borders/Border";
 import FullBorder from "./common/borders/FullBorder";
 import IconButton from "./common/buttons/IconButton";
+import Button from "./common/buttons/Button";
 
 const Project = () => {
   // リポジトリ情報をフェッチ
@@ -22,6 +23,11 @@ const Project = () => {
       .catch((e) => console.log(e));
   }, []);
 
+  const formatDate = useCallback((iso) => {
+    const d = new Date(iso);
+    return `last-commit  ${d.getMonth() + 1}月 ${d.getDate() + 1}日`
+  },[])
+
   // pinされているリポジトリを絞り込む
   const pinned = [
     "fastapi_task",
@@ -40,25 +46,38 @@ const Project = () => {
           <div className="text-white p-4 rounded-md relative" key={rp.id}>
             <AllDirectionsBorder />
             <div className="relative">
-              <img
-                src={`https://socialify.git.ci/Takuya0202/${rp.name}/image?description=1&font=Source%20Code%20Pro&name=1&pattern=Solid&theme=Dark`}
-                alt="リポジトリ画像"
-                className="relative pb-2"
-              />
+              <a
+                href={`https://github.com/Takuya0202/${rp.name}`}
+                target="_blank"
+              >
+                <img
+                  src={`https://socialify.git.ci/Takuya0202/${rp.name}/image?description=1&font=Source%20Code%20Pro&name=1&pattern=Solid&theme=Dark`}
+                  alt="リポジトリ画像"
+                  className="relative pb-2"
+                />
+              </a>
               <FullBorder direction="bottom" className="mb-2" />
             </div>
             <p>
               <a
                 href={`https://github.com/Takuya0202/${rp.name}`}
                 target="_blank"
-                className="text-[#f2f2f2] text-xl px-2 py-4"
+                className="text-[#f2f2f2]  "
               >
                 {rp.name}
               </a>
             </p>
-            <p>説明：{rp.description}</p>
-            <div className="flex justify-end mr-3">
-              <IconButton iconName="star" text={rp.stargazers_count} borderColor="yellow"/>
+            <p className="h-16">{rp.description}</p>
+            <div className="flex justify-end mr-3 items-center space-x-5">
+              <Button className="hover:scale-100">
+                {formatDate(rp.updated_at)}
+              </Button>
+              <IconButton
+                iconName="star"
+                text={rp.stargazers_count}
+                borderColor="yellow"
+                iconColor="yellow"
+              />
             </div>
           </div>
         ))}

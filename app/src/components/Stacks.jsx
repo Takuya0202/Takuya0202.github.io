@@ -18,15 +18,15 @@ const techs = [
 
 const borderColors = [
   "#0D3A2A",
-  "#009688", 
-  "#F05340", 
-  "#61DAFB", 
+  "#009688",
+  "#F05340",
+  "#61DAFB",
   "#777BB4",
-  "#2496ED", 
-  "#F05032", 
-  "#3776AB", 
-  "#3178C6", 
-  "#F7DF1E", 
+  "#2496ED",
+  "#F05032",
+  "#3776AB",
+  "#3178C6",
+  "#F7DF1E",
 ];
 const Stacks = () => {
   return (
@@ -36,7 +36,7 @@ const Stacks = () => {
       <div className="grid grid-cols-5 gap-x-5 gap-y-7">
         {techs.map((content, idx) => (
           <div
-            className="bg-[#00000082] relative p-4 hover:scale-110"
+            className="relative p-4 hover:scale-110 shadow-inset-bottom"
             key={idx}
           >
             <img src={`https://skillicons.dev/icons?i=${content}`} alt="" />

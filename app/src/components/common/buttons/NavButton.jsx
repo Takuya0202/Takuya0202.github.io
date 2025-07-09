@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "./Button";
 
-const NavButton = ({ children }) => {
+const NavButton = ({ icon , text }) => {
   return (
-    <div>
-      <Button>{children}</Button>
-    </div>
+    <Button className={"flex items-center space-x-5"}>
+      {icon}
+      {text}
+    </Button>
   );
 };
 

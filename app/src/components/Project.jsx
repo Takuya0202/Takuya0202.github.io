@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import AllDirectionsBorder from "./common/borders/AllDirectionsBorder";
 import Border from "./common/borders/Border";
 import FullBorder from "./common/borders/FullBorder";
+import IconButton from "./common/buttons/IconButton";
 
 const Project = () => {
   // リポジトリ情報をフェッチ
@@ -56,7 +57,9 @@ const Project = () => {
               </a>
             </p>
             <p>説明：{rp.description}</p>
-            <p>星の数：{rp.stargazers_count}</p>
+            <div className="flex justify-end mr-3">
+              <IconButton iconName="star" text={rp.stargazers_count} borderColor="yellow"/>
+            </div>
           </div>
         ))}
     </div>

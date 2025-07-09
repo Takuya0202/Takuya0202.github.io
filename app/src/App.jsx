@@ -9,7 +9,7 @@ import Stacks from "./components/Stacks";
 import { tokens } from "./components/Tokens";
 function App() {
   return (
-    <div className="bg-black">
+    <div className="bg-black" id="home">
       <Header />
       <main className="w-full h-full bg-black ">
         <div>

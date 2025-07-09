@@ -8,11 +8,11 @@ const FullBorder = ({
   const baseStyle = {
     background: `linear-gradient(
         ${["top", "bottom"].includes(direction) ? "90deg" : "180deg"},
-        rgba(143,143,143,0.1) 0%,
-        rgba(143,143,143,0.3) 25%,
+        rgba(143,143,143,0.3) 0%,
+        rgba(143,143,143,0.5) 25%,
         ${color} 50%,
-        rgba(143,143,143,0.3) 75%,
-        rgba(143,143,143,0.1) 100%
+        rgba(143,143,143,0.5) 75%,
+        rgba(143,143,143,0.3) 100%
       )`,
   };
 

@@ -8,12 +8,13 @@ const IconButton = ({
   className,
   borderColor = "rgba(143,143,143,0.97)",
   iconColor,
+  disabledScale = false,
   ...props
 }) => {
   const Icon = icons[iconName];
   return (
     <button
-      className={`relative bg-[#070707] shadow-inset-bottom p-2 hover:scale-110 rounded-md ${className}`}
+      className={`relative bg-[#070707] shadow-inset-bottom p-2 rounded-md ${disabledScale ? "" : "hover:scale-110"} ${className}`}
       {...props}
     >
       <div className="flex items-center space-x-2">

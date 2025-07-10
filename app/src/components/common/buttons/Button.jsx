@@ -1,10 +1,10 @@
 import React from "react";
 import Border from "../borders/Border";
 
-const Button = ({ className, children, ...props }) => {
+const Button = ({ disabledScale = false, className, children, ...props }) => {
   return (
     <button
-      className={`relative bg-[#070707] shadow-inset-bottom p-3 hover:scale-110 rounded-md ${className}`}
+      className={`relative bg-[#070707] shadow-inset-bottom p-3 rounded-md ${disabledScale ? "" : "hover:scale-110" }${className}`}
       {...props}
     >
       {children}

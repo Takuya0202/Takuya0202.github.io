@@ -3,11 +3,11 @@ import Border from "./common/borders/Border";
 
 const Footer = () => {
   return (
-    <footer className="relative h-16 w-full bg-black mt-5">
+    <footer className="relative h-16 w-full bg-black mt-5 flex items-center justify-center">
       <Border direction="top" />
-      <div className="flex items-center justify-center">
+      <div className="text-center">
         <p className="text-white text-sm">
-          <small>Takuya0202</small>
+          <small>&copy; 2025 Takuya0202. All rights reserved.</small>
         </p>
       </div>
     </footer>

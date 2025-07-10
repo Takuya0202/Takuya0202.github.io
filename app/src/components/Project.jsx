@@ -4,6 +4,7 @@ import Border from "./common/borders/Border";
 import FullBorder from "./common/borders/FullBorder";
 import IconButton from "./common/buttons/IconButton";
 import Button from "./common/buttons/Button";
+import AllDirectionsFullBorder from "./common/borders/AllDirectionsFullBorder";
 
 const Project = () => {
   // リポジトリ情報をフェッチ
@@ -47,7 +48,7 @@ const Project = () => {
             className="text-white p-4 rounded-md relative my-4 sm:my-0"
             key={rp.id}
           >
-            <AllDirectionsBorder />
+            <AllDirectionsFullBorder />
             <div className="relative">
               <a
                 href={`https://github.com/Takuya0202/${rp.name}`}
@@ -72,7 +73,7 @@ const Project = () => {
             </p>
             <p className="h-16">{rp.description}</p>
             <div className="flex justify-end mr-3 items-center space-x-5">
-              <Button className="hover:scale-100">
+              <Button className="hover:scale-100" disabledScale={true}>
                 {formatDate(rp.updated_at)}
               </Button>
               <IconButton

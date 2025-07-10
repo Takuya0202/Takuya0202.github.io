@@ -51,12 +51,7 @@ const Prompt = ({ tokens }) => {
             }
             // インデント
             if (token.type === "space") {
-              return (
-                <span
-                  key={i}
-                  className="inline-block px-4 bg-black opacity-95"
-                />
-              );
+              return <span key={i} className="inline-block px-2.5 sm:px-4" />;
             }
             // url
             if (token.type === "link") {

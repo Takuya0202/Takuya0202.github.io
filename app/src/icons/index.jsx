@@ -5,6 +5,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import EditIcon from "@mui/icons-material/Edit";
+import GithubIcon from "@mui/icons-material/GitHub";
 // ボタンアイコンまとめ。
 export const icons = {
   about: InfoIcon,
@@ -14,4 +15,5 @@ export const icons = {
   star: StarRateIcon,
   clear: RefreshIcon,
   edit: EditIcon,
+  github: GithubIcon,
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import FullBorder from "./common/borders/FullBorder";
 import AllDirectionsBorder from "./common/borders/AllDirectionsBorder";
 import IconButton from "./common/buttons/IconButton";
+import AllDirectionsFullBorder from "./common/borders/AllDirectionsFullBorder";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -27,22 +28,24 @@ const Blogs = () => {
     <div className="w-[96%] text-white sm:grid grid-cols-3 gap-x-8 gap-y-6 sm:w-[80%] mx-auto">
       {blogs.map((blog) => (
         <div key={blog.id} className="relative p-4 my-4 sm:my-0">
-          <AllDirectionsBorder />
+          <AllDirectionsFullBorder />
           <div className="w-full flex justify-center">
             <div className="my-8 inline-block text-[80px] leading-none text-center opacity-20 ">
-              {blog.emoji}
+              <a target="_blank" href={`https://zenn.dev/${blog.path}`}>
+                {blog.emoji}
+              </a>
             </div>
           </div>
           <p className="h-16">
             <a target="_blank" href={`https://zenn.dev/${blog.path}`}>
-              <span className="">{blog.title}</span>
+              <span className="gradient-text-gray-to-white">{blog.title}</span>
             </a>
           </p>
           <div className="flex justify-end mr-5 space-x-5">
             <IconButton
               iconName="edit"
               text={formatDate(blog.published_at)}
-              className="hover:scale-100"
+              disabledScale={true}
             />
             <IconButton
               iconName="like"

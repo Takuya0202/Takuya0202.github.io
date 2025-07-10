@@ -23,7 +23,7 @@ function App() {
   }, []);
   return (
     <div className="bg-black" id="home">
-      <Header />
+      <Header isMobile={isMobile} />
       <main className="w-full h-full bg-black ">
         <div>
           <div className="flex justify-center items-center" id="about">
@@ -31,13 +31,13 @@ function App() {
               {isMobile ? (
                 <SpanText
                   text={"Takuya0202"}
-                  highlightIndices={[1, 7]}
-                  size={30}
+                  highlightIndices={[1, 4, 7]}
+                  size={24}
                 />
               ) : (
                 <SpanText
                   text={"Takuya0202"}
-                  highlightIndices={[1, 7]}
+                  highlightIndices={[1, 4, 8]}
                   size={90}
                 />
               )}

@@ -25,8 +25,8 @@ const Project = () => {
 
   const formatDate = useCallback((iso) => {
     const d = new Date(iso);
-    return `last-commit  ${d.getMonth() + 1}月 ${d.getDate() + 1}日`
-  },[])
+    return `last-commit  ${d.getMonth() + 1}月 ${d.getDate() + 1}日`;
+  }, []);
 
   // pinされているリポジトリを絞り込む
   const pinned = [

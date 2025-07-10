@@ -1,4 +1,4 @@
-import React, { useEffect, useState , useCallback } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import FullBorder from "./common/borders/FullBorder";
 import AllDirectionsBorder from "./common/borders/AllDirectionsBorder";
 import IconButton from "./common/buttons/IconButton";
@@ -20,8 +20,8 @@ const Blogs = () => {
 
   const formatDate = useCallback((iso) => {
     const d = new Date(iso);
-    return `${d.getMonth() + 1}月 ${d.getDate() + 1}日`
-  },[])
+    return `${d.getMonth() + 1}月 ${d.getDate() + 1}日`;
+  }, []);
 
   return (
     <div className="text-white grid grid-cols-3 gap-x-8 gap-y-6 w-[80%] mx-auto">
@@ -39,7 +39,7 @@ const Blogs = () => {
             </a>
           </p>
           <div className="flex justify-end mr-5 space-x-5">
-            <IconButton 
+            <IconButton
               iconName="edit"
               text={formatDate(blog.published_at)}
               className="hover:scale-100"

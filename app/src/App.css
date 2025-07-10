@@ -5,4 +5,91 @@
   .shadow-inset-bottom {
     box-shadow: inset 0 -15px 20px #cccccc10;
   }
+  .gradient-text-base {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-text-black-to-red {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #414141, #ff0000 50%, #414141);
+  }
+  .gradient-text-blue-to-cyan {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #3b82f6, #06b6d4);
+  }
+
+  .gradient-text-pink-to-red {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #ec4899, #ef4444);
+  }
+
+  .gradient-text-purple-to-pink {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #8b5cf6, #ec4899);
+  }
+
+  .gradient-text-green-to-lime {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #10b981, #84cc16);
+  }
+
+  .gradient-text-yellow-to-orange {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #facc15, #f97316);
+  }
+
+  .gradient-text-gray-to-white {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #6b7280, #f9fafb);
+  }
+
+  .gradient-text-rainbow {
+    @apply gradient-text-base;
+    background-image: linear-gradient(
+      45deg,
+      #ff000080,
+      #ff7f0080,
+      #ffff0080,
+      #00ff0080,
+      #0000ff80,
+      #4b008280,
+      #8f00ff80
+    );
+  }
+  /* 端がダークグレー〜ブラック、真ん中にピンク系ネオン */
+  .gradient-text-neon-pink {
+    @apply gradient-text-base;
+    background-image: linear-gradient(
+      45deg,
+      #0a0a0a 4%,
+      /* 黒に近い暗め */ #ff73cb,
+      /* ピンク系メイン */ #0a0a0a /* 黒に近い暗め */
+    );
+  }
+
+  /* 真ん中ブルー系ネオン */
+  .gradient-text-neon-blue {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #0a0a0a 4%, #72dbff, #0a0a0a);
+  }
+
+  /* 真ん中グリーン系ネオン */
+  .gradient-text-neon-green {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #0a0a0a 4%, #39ff14, #0a0a0a);
+  }
+
+  /* 真ん中イエロー系ネオン */
+  .gradient-text-neon-yellow {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #0a0a0a 4%, #ffff33, #0a0a0a);
+  }
+
+  /* 真ん中パープル系ネオン */
+  .gradient-text-neon-purple {
+    @apply gradient-text-base;
+    background-image: linear-gradient(45deg, #0a0a0a 4%, #b266ff, #0a0a0a);
+  }
 }

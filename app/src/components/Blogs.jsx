@@ -24,9 +24,9 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="text-white grid grid-cols-3 gap-x-8 gap-y-6 w-[80%] mx-auto">
+    <div className="w-[96%] text-white sm:grid grid-cols-3 gap-x-8 gap-y-6 sm:w-[80%] mx-auto">
       {blogs.map((blog) => (
-        <div key={blog.id} className="relative p-4 ">
+        <div key={blog.id} className="relative p-4 my-4 sm:my-0">
           <AllDirectionsBorder />
           <div className="w-full flex justify-center">
             <div className="my-8 inline-block text-[80px] leading-none text-center opacity-20 ">

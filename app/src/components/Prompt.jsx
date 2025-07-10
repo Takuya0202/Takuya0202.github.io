@@ -27,7 +27,7 @@ const Prompt = ({ tokens }) => {
 
   return (
     <div className="">
-      <div className="relative max-w-[1000px] w-[640px] rounded-lg p-4 bg-black my-5 mx-auto h-[302px]">
+      <div className="relative p-4 w-[96%] bg-black my-5 mx-auto sm:w-[440px] sm:h-[302px]">
         <AllDirectionsFullBorder />
         <div className="flex items-center justify-between">
           <p className="text-white">
@@ -75,7 +75,6 @@ const Prompt = ({ tokens }) => {
             // その他の出力
             const colors = {
               word: "#98c379",
-              variable: "#e06c75",
               property: "#e5c07b",
               string: "#c678dd",
               symbol: "#abb2bf",

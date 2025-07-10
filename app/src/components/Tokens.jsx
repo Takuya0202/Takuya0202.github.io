@@ -10,19 +10,15 @@ export const tokens = [
   { type: "enter" },
 
   { type: "space" },
-  { type: "variable", text: "$this" },
-  { type: "property", text: "->" },
   { type: "property", text: "name", pd: true },
-  { type: "symbol", text: "=", pd: true },
+  { type: "symbol", text: ":", pd: true },
   { type: "string", text: '"Shimozono  ' },
   { type: "string", text: '  Takuya"', pd: true },
   { type: "enter" },
 
   { type: "space" },
-  { type: "variable", text: "$this" },
-  { type: "property", text: "->" },
   { type: "property", text: "github", pd: true },
-  { type: "symbol", text: "=", pd: true },
+  { type: "symbol", text: ":", pd: true },
   {
     type: "link",
     text: "https://github.com/Takuya0202",
@@ -31,10 +27,8 @@ export const tokens = [
   { type: "enter" },
 
   { type: "space" },
-  { type: "variable", text: "$this" },
-  { type: "property", text: "->" },
   { type: "property", text: "tech-blog", pd: true },
-  { type: "symbol", text: "=", pd: true },
+  { type: "symbol", text: ":", pd: true },
   {
     type: "link",
     text: "https://zenn.dev/amethyst",
@@ -56,14 +50,14 @@ export const tokens = [
 
   { type: "space" },
   { type: "word", text: "echo", pd: true },
-  { type: "string", text: '"使用言語', pd: true },
+  { type: "string", text: '"Language', pd: true },
   { type: "string", text: 'PHP/Python/Javascript"' },
   { type: "enter" },
 
   { type: "space" },
   { type: "word", text: "echo", pd: true },
-  { type: "string", text: '"フレームワーク', pd: true },
-  { type: "string", text: 'Laravel/django/fastapi/React"' },
+  { type: "string", text: '"framework', pd: true },
+  { type: "string", text: 'Laravel/fastapi/React"' },
   { type: "enter" },
 
   { type: "symbol", text: "}" },

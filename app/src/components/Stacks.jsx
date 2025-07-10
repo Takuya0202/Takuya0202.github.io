@@ -30,13 +30,13 @@ const borderColors = [
 ];
 const Stacks = () => {
   return (
-    <div className="h-[302px] p-4 relative">
+    <div className="w-[96%] mx-auto sm:w-auto sm:mx-0 p-4 relative sm:h-[302px] ">
       <p className="ml-2 mt-2 text-white">Stacks</p>
       <AllDirectionsFullBorder />
       <div className="grid grid-cols-5 gap-x-5 gap-y-7">
         {techs.map((content, idx) => (
           <div
-            className="relative p-4 hover:scale-110 shadow-inset-bottom"
+            className="relative p-2 pb-3.5 hover:scale-110 shadow-inset-bottom sm:p-4"
             key={idx}
           >
             <img src={`https://skillicons.dev/icons?i=${content}`} alt="" />

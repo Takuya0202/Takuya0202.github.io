@@ -40,10 +40,13 @@ const Project = () => {
 
   return (
     // gridで3つずつ表示
-    <div className="grid grid-cols-3 gap-x-4 gap-y-8 w-[80%] mx-auto">
+    <div className="w-[96%] sm:grid grid-cols-3 gap-x-4 gap-y-8 sm:w-[80%] mx-auto">
       {pinnedRepos &&
         pinnedRepos.map((rp) => (
-          <div className="text-white p-4 rounded-md relative" key={rp.id}>
+          <div
+            className="text-white p-4 rounded-md relative my-4 sm:my-0"
+            key={rp.id}
+          >
             <AllDirectionsBorder />
             <div className="relative">
               <a

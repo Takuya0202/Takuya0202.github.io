@@ -1,19 +1,18 @@
 import React from "react";
 import Border from "./common/borders/Border";
-import Button from "./common/buttons/Button";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import IconButton from "./common/buttons/IconButton";
 
 const Header = () => {
   return (
     <header className="fixed z-10 w-full block">
-      <div className="relative flex items-center py-3 bg-black justify-around ">
-        <h1 className="text-white ml-5">
+      <div className="relative sm:flex sm:items-center sm:py-3 sm:bg-black sm:justify-around">
+        <h1 className="text-white flex justify-center my-3 sm:my-0">
           <AnchorLink href="#home">
             <p>Logo</p>
           </AnchorLink>
         </h1>
-        <ul className="flex items-center space-x-10 text-white mr-10">
+        <ul className="flex items-center justify-center text-white space-x-10 pb-5 sm:mr-10 sm:pb-0">
           <AnchorLink href="#about">
             <IconButton
               iconName="about"

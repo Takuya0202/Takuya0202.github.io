@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import Blogs from "./components/Blogs";
 import Border from "./components/common/borders/Border";
@@ -9,37 +10,54 @@ import Prompt from "./components/Prompt";
 import Stacks from "./components/Stacks";
 import { tokens } from "./components/Tokens";
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize(); // 初回チェック
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="bg-black" id="home">
       <Header />
       <main className="w-full h-full bg-black ">
         <div>
-          {/* <div className="w-[80%] mx-auto text-[100px] mt-40 mb-20 flex items-center justify-center" id="about">
-            <h2 className="gradient-text-gray-to-white">I'm</h2>
-            <h2 className="gradient-text-rainbow">Takuya0202</h2>
-          </div> */}
-
-          <div className="flex justify-center items-center">
-            <div
-              className="p-4 mb-20 mt-40 flex items-center text-[100px] space-x-5"
-              id="about"
-            >
-              <SpanText text={"Takuya0202"} highlightIndices={[1, 7]} />
+          <div className="flex justify-center items-center" id="about">
+            <div className="mb-24 sm:mb-32 mt-48" id="about">
+              {isMobile ? (
+                <SpanText
+                  text={"Takuya0202"}
+                  highlightIndices={[1, 7]}
+                  size={30}
+                />
+              ) : (
+                <SpanText
+                  text={"Takuya0202"}
+                  highlightIndices={[1, 7]}
+                  size={90}
+                />
+              )}
             </div>
           </div>
-          <div className="w-full flex justify-center space-x-20 items-center">
+          <div className="w-full sm:flex sm:justify-center sm:space-x-20 sm:items-center">
             <Prompt tokens={tokens} />
             <Stacks />
           </div>
         </div>
         <div className="flex justify-center my-20" id="project">
-          <SpanText text="Project" highlightIndices={[2]} />
+          {isMobile ? (
+            <SpanText size={50} text="Project" highlightIndices={[2]} />
+          ) : (
+            <SpanText size={80} text="Project" highlightIndices={[2]} />
+          )}
         </div>
         <Project />
-        <div className="flex justify-center">
-          <h1 className="w-auto p-4 text-white text-[80px] my-20" id="blog">
-            Blogs
-          </h1>
+        <div className="flex justify-center my-20" id="blog">
+          <SpanText size={80} text="Blog" highlightIndices={[1]} />
         </div>
         <Blogs />
       </main>

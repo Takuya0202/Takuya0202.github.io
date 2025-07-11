@@ -31,14 +31,14 @@ function App() {
               {isMobile ? (
                 <SpanText
                   text={"Takuya0202"}
-                  highlightIndices={[1, 4, 7]}
+                  highlightIndices={[7]}
                   size={24}
                 />
               ) : (
                 <SpanText
                   text={"Takuya0202"}
-                  highlightIndices={[1, 4, 8]}
-                  size={90}
+                  highlightIndices={[8]}
+                  size={80}
                 />
               )}
             </div>

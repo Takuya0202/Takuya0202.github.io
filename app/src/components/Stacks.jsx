@@ -31,9 +31,9 @@ const borderColors = [
 const Stacks = () => {
   return (
     <div className="w-[96%] mx-auto sm:w-auto sm:mx-0 p-4 relative sm:h-[302px] ">
-      <p className="ml-2 mt-2 text-white">Stacks</p>
+      <p className="gradient-text-gray-to-white ">Stacks</p>
       <AllDirectionsFullBorder />
-      <div className="grid grid-cols-5 gap-x-5 gap-y-7">
+      <div className="grid grid-cols-5 gap-x-5 gap-y-8">
         {techs.map((content, idx) => (
           <div
             className="relative p-2 pb-3.5 hover:scale-110 shadow-inset-bottom sm:p-4"

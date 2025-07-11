@@ -12,8 +12,8 @@ export const tokens = [
   { type: "space" },
   { type: "property", text: "name", pd: true },
   { type: "symbol", text: ":", pd: true },
-  { type: "string", text: '"Shimozono  ' },
-  { type: "string", text: '  Takuya"', pd: true },
+  // { type: "string", text: '"Shimozono  ' },
+  { type: "string", text: '"Shimozono   Takuya"', pd: true },
   { type: "enter" },
 
   { type: "space" },

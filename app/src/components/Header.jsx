@@ -2,6 +2,7 @@ import React from "react";
 import Border from "./common/borders/Border";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import IconButton from "./common/buttons/IconButton";
+import Logo from "../icons/logo";
 
 const Header = ({ isMobile }) => {
   return (
@@ -11,7 +12,7 @@ const Header = ({ isMobile }) => {
           {isMobile ? (
             <div className="w-[80%] mx-auto flex items-center justify-between">
               <AnchorLink href="#home">
-                <p>Logo</p>
+                <Logo />
               </AnchorLink>
               <IconButton
                 iconName="github"
@@ -24,7 +25,7 @@ const Header = ({ isMobile }) => {
             </div>
           ) : (
             <AnchorLink href="#home">
-              <p>Logo</p>
+              <Logo />
             </AnchorLink>
           )}
         </h1>

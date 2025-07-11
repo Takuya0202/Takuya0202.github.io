@@ -66,14 +66,17 @@ const Project = () => {
               <a
                 href={`https://github.com/Takuya0202/${rp.name}`}
                 target="_blank"
-                className="text-[#f2f2f2]  "
+                className="gradient-text-common-text text-lg font-bold"
               >
                 {rp.name}
               </a>
             </p>
-            <p className="h-16">{rp.description}</p>
+            <p className="h-16 gradient-text-common-text">{rp.description}</p>
             <div className="flex justify-end mr-3 items-center space-x-5">
-              <Button className="hover:scale-100" disabledScale={true}>
+              <Button
+                disabledScale={true}
+                className="gradient-text-common-text"
+              >
                 {formatDate(rp.updated_at)}
               </Button>
               <IconButton

@@ -38,7 +38,7 @@ const Prompt = ({ tokens }) => {
           <IconButton
             iconName="clear"
             text="clear"
-            className="text-white"
+            className="gradient-text-gray-to-white "
             onClick={handleClean}
           />
         </div>

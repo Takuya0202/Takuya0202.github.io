@@ -38,7 +38,7 @@ const Blogs = () => {
           </div>
           <p className="h-16">
             <a target="_blank" href={`https://zenn.dev/${blog.path}`}>
-              <span className="gradient-text-gray-to-white">{blog.title}</span>
+              <span className="gradient-text-common-text">{blog.title}</span>
             </a>
           </p>
           <div className="flex justify-end mr-5 space-x-5">
@@ -46,6 +46,7 @@ const Blogs = () => {
               iconName="edit"
               text={formatDate(blog.published_at)}
               disabledScale={true}
+              className="gradient-text-common-text"
             />
             <IconButton
               iconName="like"

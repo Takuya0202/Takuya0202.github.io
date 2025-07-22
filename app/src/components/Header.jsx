@@ -12,7 +12,7 @@ const Header = ({ isMobile }) => {
           {isMobile ? (
             <div className="w-[80%] mx-auto flex items-center justify-between">
               <AnchorLink href="#home">
-                <Logo />
+                <Logo size={48}/>
               </AnchorLink>
               <IconButton
                 iconName="github"

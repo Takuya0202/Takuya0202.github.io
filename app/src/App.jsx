@@ -27,7 +27,7 @@ function App() {
       <main className="w-full h-full bg-black ">
         <div>
           <div className="flex justify-center items-center" id="about">
-            <div className="mb-24 sm:mb-32 mt-48" id="about">
+            <div className="mb-24 mt-60 sm:mb-32 sm:mt-48" id="about">
               {isMobile ? (
                 <SpanText
                   text={"Takuya0202"}

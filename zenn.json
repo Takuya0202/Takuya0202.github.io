@@ -1,12 +1,38 @@
 {
   "articles": [
     {
+      "id": 439704,
+      "post_type": "Article",
+      "title": "JavaScriptで日時の差分を計算する方法とISO形式の扱い方",
+      "slug": "d9d19dfd8c03a6",
+      "comments_count": 0,
+      "liked_count": 0,
+      "bookmarked_count": 0,
+      "body_letters_count": 3666,
+      "article_type": "tech",
+      "emoji": "📑",
+      "is_suspending_private": false,
+      "published_at": "2025-07-22T12:16:08.369+09:00",
+      "body_updated_at": "2025-07-22T12:16:08.369+09:00",
+      "source_repo_updated_at": "2025-07-22T12:16:08.364+09:00",
+      "pinned": false,
+      "path": "/amethyst/articles/d9d19dfd8c03a6",
+      "principal_type": "User",
+      "user": {
+        "id": 210232,
+        "username": "amethyst",
+        "name": "紫",
+        "avatar_small_url": "https://res.cloudinary.com/zenn/image/fetch/s--9ccHj65z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_70/https://storage.googleapis.com/zenn-user-upload/avatar/d3a0263e7f.jpeg"
+      },
+      "publication": null
+    },
+    {
       "id": 428681,
       "post_type": "Article",
       "title": "React × Laravel × Dockerで簡単に環境構築する",
       "slug": "1af8a05074fa2f",
       "comments_count": 0,
-      "liked_count": 3,
+      "liked_count": 4,
       "bookmarked_count": 0,
       "body_letters_count": 5145,
       "article_type": "tech",
@@ -17,6 +43,7 @@
       "source_repo_updated_at": null,
       "pinned": false,
       "path": "/amethyst/articles/1af8a05074fa2f",
+      "principal_type": "User",
       "user": {
         "id": 210232,
         "username": "amethyst",
@@ -42,6 +69,7 @@
       "source_repo_updated_at": null,
       "pinned": false,
       "path": "/amethyst/articles/bcbab679c04a13",
+      "principal_type": "User",
       "user": {
         "id": 210232,
         "username": "amethyst",
@@ -67,6 +95,7 @@
       "source_repo_updated_at": null,
       "pinned": false,
       "path": "/amethyst/articles/c1fa2e8ff574bd",
+      "principal_type": "User",
       "user": {
         "id": 210232,
         "username": "amethyst",
@@ -92,6 +121,7 @@
       "source_repo_updated_at": null,
       "pinned": false,
       "path": "/amethyst/articles/2784a17d94d667",
+      "principal_type": "User",
       "user": {
         "id": 210232,
         "username": "amethyst",
@@ -117,6 +147,7 @@
       "source_repo_updated_at": null,
       "pinned": false,
       "path": "/amethyst/articles/71969c2a1fe453",
+      "principal_type": "User",
       "user": {
         "id": 210232,
         "username": "amethyst",
@@ -142,6 +173,7 @@
       "source_repo_updated_at": null,
       "pinned": false,
       "path": "/amethyst/articles/c0b7b71890f0fb",
+      "principal_type": "User",
       "user": {
         "id": 210232,
         "username": "amethyst",
@@ -167,6 +199,7 @@
       "source_repo_updated_at": null,
       "pinned": false,
       "path": "/amethyst/articles/ce987a48137262",
+      "principal_type": "User",
       "user": {
         "id": 210232,
         "username": "amethyst",
@@ -192,6 +225,7 @@
       "source_repo_updated_at": null,
       "pinned": false,
       "path": "/amethyst/articles/52b06dd5ee69ab",
+      "principal_type": "User",
       "user": {
         "id": 210232,
         "username": "amethyst",
@@ -217,6 +251,7 @@
       "source_repo_updated_at": null,
       "pinned": false,
       "path": "/amethyst/articles/7434635f3bd2fc",
+      "principal_type": "User",
       "user": {
         "id": 210232,
         "username": "amethyst",
